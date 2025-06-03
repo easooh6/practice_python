@@ -2,8 +2,8 @@ from deepface import DeepFace
 
 result = DeepFace.analyze(img_path='photos/image1.png', actions=['age', 'gender', 'race', 'emotion'])
 
-# Красивый вывод результатов
-person = result[0]  # Берем первое лицо
+
+person = result[0]  
 
 
 print(f"Возраст: {person['age']} лет")
